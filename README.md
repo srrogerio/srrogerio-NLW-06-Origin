@@ -3,6 +3,7 @@
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
+  <a href="#-sobre">Sobre</a>
 </p>
 
 <p align="center">
@@ -47,6 +48,10 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
+
+## 📝 Sobre
+
+Esse projeto faz parte dos meus estudos, para saber sobre o projeto original vá até a [origem](https://github.com/rocketseat-education/nlw-06-origin).
 
 ---
 
