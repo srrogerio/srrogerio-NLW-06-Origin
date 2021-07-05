@@ -22,8 +22,8 @@
 <<<<<<< HEAD
   <img alt="OriginSix" src=".github/preview.png" width="100%">
 =======
-  <img alt="OriginSix" src="https://user-images.githubusercontent.com/12056766/124126313-f0601680-da50-11eb-988b-c971f9a33315.png" width="100%">
->>>>>>> 51a96b95f185316c9ba6b2b4d1cee5423d31462c
+  <img alt="OriginSix" src="assets/fotos/preview.png" width="100%">
+
 </p>
 
 ## 🚀 Tecnologias
