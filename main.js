@@ -1,6 +1,6 @@
 // DOM Document Object Model
 
-/*Opens and closes the menu when clicking on the icon: hamburger and x */
+/** Opens and closes the menu when clicking on the icon: hamburger and x */
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -10,7 +10,7 @@ for (const element of toggle) {
   })
 }
 
-/* When clicking on a menu item, hide the menu */
+/** When clicking on a menu item, hide the menu */
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -19,11 +19,11 @@ for (const link of links) {
   })
 }
 
-/* Change header page when scrolling */
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+/** Change header page when scrolling */
 
-window.addEventListener('scroll', function () {
+function changeHeaderWhenScroll() {
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
   if (window.scrollY >= navHeight) {
     // scroll greater than header height
     header.classList.add('scroll')
@@ -31,9 +31,9 @@ window.addEventListener('scroll', function () {
     // scroll less than header height
     header.classList.remove('scroll')
   }
-})
+}
 
-/* Testimonials carousel slider swiper */
+/** Testimonials carousel slider swiper */
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
@@ -43,7 +43,7 @@ const swiper = new Swiper('.swiper-container', {
   keyboard: true
 })
 
-/* ScrollReveal: Mostrar elementos quando der scroll na página */
+/** ScrollReveal: Show elements when scrolling on page */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -56,7 +56,24 @@ scrollReveal.reveal(
   #about .image, #about .text,
   #services header, #services .card,
   #testimonials header, #testimonials .testimonials
-  #contact .text, #contact .links
+  #contact .text, #contact .links,
+  footer .brand, footer .social 
   `,
   { interval: 100 }
 )
+
+/** Back to top button */
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+  if (window.scrollY > 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+/** When Scroll */
+window.addEventListener('scroll', function () {
+  changeHeaderWhenScroll()
+  backToTop()
+})
